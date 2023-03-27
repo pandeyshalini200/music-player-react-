@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.player{
+    display: block;
+    background-image: linear-gradient(to bottom, rgb(239, 239, 239), rgb(255, 39, 118));
+    margin: 0px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: inset -6px -6px 12px rgba(236, 236, 236, 0.8),
+     inset 6px 6px 12px rgba(225, 225, 225, 0.4);
+}
+
+.player> h4{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.player>p{
+    counter-reset: #aaa;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.player > p span{
+    font-weight: 400;
+    width: fit-content;
+}
+
+.details > .details_img{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.details > .details_img img{
+    display: block;
+    margin: 50px auto;
+    object-fit: contain;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8),
+    -6px -6px 12px rgba(225, 225, 225, 0.4);
+}
+
+/* .details > .details_img:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    bottom: -25px;
+    right: -25px;
+    border-radius: 50%;
+    border: 3px dashed rgba(234, 253, 45, 0.5);
+} */
+
+.details .details_title {
+    color: #eee;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.details .details_artist {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.control .control_PlayButton {
+    display: flex;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.control .control_SkipBtn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+}
+
+audio{
+    outline-width: 0;
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+
+audio::-webkit-media-control-play-button{
+    display: none;
+}
